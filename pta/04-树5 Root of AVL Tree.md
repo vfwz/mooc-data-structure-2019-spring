@@ -1,3 +1,5 @@
+## 04-树5 Root of AVL Tree
+
 An AVL tree is a self-balancing binary search tree. In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by more than one, rebalancing is done to restore this property. Figures 1-4 illustrate the rotation rules.   
 
 ![image][figure1] &nbsp;&nbsp;&nbsp;&nbsp; ![image][figure2]   

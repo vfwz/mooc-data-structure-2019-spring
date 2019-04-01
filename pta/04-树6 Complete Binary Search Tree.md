@@ -1,3 +1,5 @@
+## Complete Binary Search Tree
+
 A Binary Search Tree (BST) is recursively defined as a binary tree which has the following properties:
 
 - The left subtree of a node contains only nodes with keys less than the node's key.
