@@ -41,12 +41,15 @@ void InputConnection(int* set, int c1, int c2) {
     r1 = findRoot(set, c1);
     r2 = findRoot(set, c2);
 
-    if(set[r1] < set[r2]) { // 如果r1集合的元素比r2多
-        set[r1] += set[r2];
-        set[r2] = r1;       // 将r2合并到r1上
-    } else {
-        set[r2] += set[r1];
-        set[r1] = r2;
+    // 如果r1 == r2, 表示同一个集合，则无需合并
+    if(r1 != r2) {
+        if(set[r1] < set[r2]) { // 如果r1集合的元素比r2多
+            set[r1] += set[r2];
+            set[r2] = r1;       // 将r2合并到r1上
+        } else {
+            set[r2] += set[r1];
+            set[r1] = r2;
+        }
     }
 
 }
